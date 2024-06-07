@@ -17,5 +17,5 @@ export async function GET(request: Request) {
     },
   )
 
-  return Response.json({ jwt: token.toJwt() })
+  return Response.json(token.toJwt())
 }
